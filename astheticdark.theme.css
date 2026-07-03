@@ -1,0 +1,88 @@
+/**
+ * @name Aesthetic Dark
+ * @author Zenin-tojii
+ * @version 1.0.0
+ * @description A serene, dark Japanese aesthetic with frosted glass UI overlays.
+ * @source https://github.com/Zenin-tojii/discord-aesthetic-dark-theme
+ * @updateUrl https://raw.githubusercontent.com/Zenin-tojii/discord-aesthetic-dark-theme/main/astheticdark.theme.css
+ */
+
+@import url(https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css);
+
+:root {
+  --theme-background-image: url('https://cdn.discordapp.com/attachments/1496203190834692259/1522440618121629737/52081c5c2a27f5c28665606212ddf96c.png?ex=6a487ad0&is=6a472950&hm=6b853892b61dfcae2a2734e98ca91803e94e3700feee5626dc2e4b7c91ea13de&');
+  --main-theme-color: #a855f7;
+  --category-hover-color: #c084fc;
+  --theme-transparency: rgba(10, 10, 14, 0.45);
+  --message-box-transparency: rgba(0, 0, 0, 0.5);
+  --embed-background-transparency: rgba(0, 0, 0, 0.6);
+  --small-user-popout-background-transparency: rgba(10, 10, 14, 0.75);
+  --big-user-popout-background-transparency: rgba(10, 10, 14, 0.75);
+  --context-menu-transparency: rgba(10, 10, 14, 0.85);
+  --folder-background-color: rgba(168, 85, 247, 0.15);
+  --expanded-folder-background-color: rgba(0, 0, 0, 0.5);
+  --server-listing-width: 62px;
+  --font-size: 92%;
+  --unread-server-animation: none;
+  --mention-color: rgba(168, 85, 247, 0.12);
+  --mention-sider: #a855f7;
+  --code-markup-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar_a4d4d9,
+.chat_a7d20e,
+.container_c2739c,
+.membersWrap_cbd271,
+.stageSection_a58f4a,
+.userPanelOuter_c69a7b,
+.userPanelInner_c69a7b {
+  backdrop-filter: blur(16px) !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 85, 247, 0.2) !important;
+  border-radius: 10px !important;
+  border: none !important;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(168, 85, 247, 0.5) !important;
+}
+
+[class^="folder_"] {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+[class^="folder_"]:hover {
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.scrollableContainer_d0696b {
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.05);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scrollableContainer_d0696b:focus-within {
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+}
+
+pre code {
+  font-family: "JetBrains Mono", "Fira Code", monospace !important;
+  border-left: 3px solid #a855f7 !important;
+}
